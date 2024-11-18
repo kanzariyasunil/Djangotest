@@ -1,13 +1,11 @@
 {
-    "builds": [{
-        "src": "vercel_app/wsgi.py",
-        "use": "@vercel/vercel-python-wsgi",
-        "config": { "maxLambdaSize": "15mb" }
+    "builds":[{
+        "src":"web/wsgi.py",
+        "use":"@vercel/python",
+        "config":{"maxLambdaSize":"15mb","runtime":"python3.12"}
     }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "vercel_app/wsgi.py"
-        }
-    ]
+    "routes":[{
+        "src":"/(.*)",
+        "dest":"web/wsgi.py"
+        }]
 }
