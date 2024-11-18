@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^-2xoj1&#+bllbm@6c)2cr14k#tm@k1&ag*$_(p_z5#+p9$p!+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangotest-zeta.vercel.app']
 
 
 # Application definition
